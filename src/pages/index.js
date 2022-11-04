@@ -6,6 +6,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+
 const links = [
   {
     text: "Tutorial",
@@ -99,7 +102,7 @@ const IndexPage = () => (
     <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
-          <a
+        <a
             className={styles.listItemLink}
             href={`${link.url}${utmParameters}`}
           >
