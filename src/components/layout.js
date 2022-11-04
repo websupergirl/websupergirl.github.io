@@ -1,41 +1,56 @@
-import React from 'react'
-import '../assets/scss/main.scss'
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.com/docs/use-static-query/
+ */
 
-import Footer from './Footer'
+import * as React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 
-class Template extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: 'is-loading'
+import Header from "./header"
+import "./layout.css"
+
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
     }
-  }
+  `)
 
-  componentDidMount () {
-    this.timeoutId = setTimeout(() => {
-        this.setState({loading: ''});
-    }, 100);
-  }
-
-  componentWillUnmount () {
-    if (this.timeoutId) {
-        clearTimeout(this.timeoutId);
-    }
-  }
-
-  render() {
-    const { children } = this.props
-
-    return (
-      <div className={`body ${this.state.loading}`}>
-        <div id="wrapper">
-
-          {children}
-          <Footer />
-        </div>
+  return (
+    <>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: `var(--size-content)`,
+          padding: `var(--size-gutter)`,
+        }}
+      >
+        <main>{children}</main>
+        <footer
+          style={{
+            marginTop: `var(--space-5)`,
+            fontSize: `var(--font-sm)`,
+          }}
+        >
+          © {new Date().getFullYear()} &middot; Built with
+          {` `}
+          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        </footer>
       </div>
-    )
-  }
+    </>
+  )
 }
 
-export default Template
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout
