@@ -1147,7 +1147,7 @@
 
 /* Header */
 
-	#header {
+	#sidebar {
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
 		@include vendor('justify-content', 'space-between');
@@ -1336,7 +1336,7 @@
 
 		/* Header */
 
-			#header {
+			#sidebar {
 				width: $size-header;
 
 				> header {
@@ -1385,7 +1385,7 @@
 
 		/* Header */
 
-			#header {
+			#sidebar {
 				width: $size-header;
 			}
 
@@ -1439,7 +1439,7 @@
 
 		/* Header */
 
-			#header {
+			#sidebar {
 				@include vendor('backface-visibility', 'hidden');
 				@include vendor('transition', ('transform #{_duration(header)} ease'));
 				display: block;
@@ -1565,7 +1565,7 @@
 						}
 					}
 
-					#header {
+					#sidebar {
 						@include vendor('transform', 'translateX(0)');
 					}
 				}
@@ -1657,7 +1657,7 @@
 
 		/* Header */
 
-			#header {
+			#sidebar {
 				width: $size-header;
 
 				@if _misc(header-side) == 'right' {

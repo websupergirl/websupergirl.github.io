@@ -2686,7 +2686,7 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
+	#sidebar {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -2710,27 +2710,27 @@ input, select, textarea {
 		right: 0;
 	}
 
-		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
+		#sidebar h1, #sidebar h2, #sidebar h3, #sidebar h4, #sidebar h5, #sidebar h6 {
 			color: #ffffff;
 		}
 
-			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
+			#sidebar h1 a, #sidebar h2 a, #sidebar h3 a, #sidebar h4 a, #sidebar h5 a, #sidebar h6 a {
 				color: #ffffff;
 			}
 
-		#header header p {
+		#sidebar header p {
 			color: #b7eadc;
 		}
 
-		#header a {
+		#sidebar a {
 			color: #d2f2e9;
 		}
 
-			#header a:hover {
+			#sidebar a:hover {
 				color: #ffffff !important;
 			}
 
-		#header > header {
+		#sidebar > header {
 			-moz-flex-shrink: 0;
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
@@ -2738,24 +2738,24 @@ input, select, textarea {
 			padding: 3em;
 		}
 
-			#header > header .avatar {
+			#sidebar > header .avatar {
 				display: block;
 				margin: 0 auto 2.25em auto;
 				width: 8em;
 			}
 
-			#header > header h1 {
+			#sidebar > header h1 {
 				font-size: 1.75em;
 				margin: 0;
 			}
 
-			#header > header p {
+			#sidebar > header p {
 				color: #d2f2e9;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
 
-		#header > footer {
+		#sidebar > footer {
 			-moz-flex-shrink: 0;
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
@@ -2766,34 +2766,34 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			#header > footer .icons {
+			#sidebar > footer .icons {
 				margin: 0;
 			}
 
-				#header > footer .icons li a {
+				#sidebar > footer .icons li a {
 					color: #b7eadc;
 				}
 
-		#header > nav {
+		#sidebar > nav {
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
 		}
 
-			#header > nav ul {
+			#sidebar > nav ul {
 				list-style: none;
 				margin: 0;
 				padding: 0;
 			}
 
-				#header > nav ul li {
+				#sidebar > nav ul li {
 					border-top: solid 2px #5ccfb1;
 					display: block;
 					padding: 0;
 				}
 
-					#header > nav ul li a {
+					#sidebar > nav ul li a {
 						-moz-transition: none;
 						-webkit-transition: none;
 						-ms-transition: none;
@@ -2805,12 +2805,12 @@ input, select, textarea {
 						text-decoration: none;
 					}
 
-						#header > nav ul li a.active {
+						#sidebar > nav ul li a.active {
 							background: #fff;
 							color: #64a2d0 !important;
 						}
 
-					#header > nav ul li:first-child {
+					#sidebar > nav ul li:first-child {
 						border-top: 0;
 					}
 
@@ -2881,15 +2881,15 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
+			#sidebar {
 				width: 21em;
 			}
 
-				#header > header {
+				#sidebar > header {
 					padding: 2em;
 				}
 
-				#header > footer {
+				#sidebar > footer {
 					padding: 1.5em;
 				}
 
@@ -2919,7 +2919,7 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
+			#sidebar {
 				width: 20em;
 			}
 
@@ -2965,7 +2965,7 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
+			#sidebar {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
@@ -2988,7 +2988,7 @@ input, select, textarea {
 				right: 0;
 			}
 
-				#header > footer {
+				#sidebar > footer {
 					bottom: auto;
 					left: auto;
 					margin: 0.5em 0 0 0;
@@ -3096,7 +3096,7 @@ input, select, textarea {
 				transform: translateX(-23em);
 			}
 
-			body.header-visible #header {
+			body.header-visible #sidebar {
 				-moz-transform: translateX(0);
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
@@ -3175,7 +3175,7 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
+			#sidebar {
 				width: 17em;
 				-moz-transform: translateX(17em);
 				-webkit-transform: translateX(17em);
@@ -3184,24 +3184,24 @@ input, select, textarea {
 				right: 0;
 			}
 
-				#header > header {
+				#sidebar > header {
 					padding: 2em;
 				}
 
-					#header > header .avatar {
+					#sidebar > header .avatar {
 						margin: 0 auto 1.6875em auto;
 						width: 6em;
 					}
 
-					#header > header h1 {
+					#sidebar > header h1 {
 						font-size: 1.5em;
 					}
 
-					#header > header p {
+					#sidebar > header p {
 						margin: 1em 0 0 0;
 					}
 
-				#header > footer {
+				#sidebar > footer {
 					padding: 1.5em;
 				}
 

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Nikole Garcia`,
+    title: `Nikole Garcia, Full Stack Developer`,
     description: `A portfolio / resume site built from Gatsby Starter and Read only from HTML5 UP`,
     author: `@websupergirl`,
     siteUrl: `https://supernikole.com/`,
