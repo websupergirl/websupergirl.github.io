@@ -12,6 +12,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Sidebar from "./sidebar"
 import One from "./section-one"
 import Two from "./section-two"
+import Three from "./section-three"
+import Four from "./section-four"
 import Footer from "./footer"
 import "../assets/css/main.css"
 
@@ -32,6 +34,8 @@ const Layout = ({ children }) => {
       <div id="wrapper">
         <One />
         <Two />
+        <Three />
+        <Four />
         <div
           style={{
             margin: `0 auto`,
