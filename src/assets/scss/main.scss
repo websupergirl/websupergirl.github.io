@@ -1295,7 +1295,7 @@
 
 /* Footer */
 
-	#footer {
+	footer {
 		background: #fafafa;
 		border-top: 0;
 		color: #c0c0c0;
@@ -1304,25 +1304,20 @@
 
 		.copyright {
 			line-height: 1em;
-			list-style: none;
 			padding: 0;
+      display: inline-block;
+      font-size: 0.8em;
+      margin-left: 1em;
+      padding-left: 1em;
 
-			li {
-				border-left: solid 1px #d4d4d4;
-				display: inline-block;
-				font-size: 0.8em;
-				margin-left: 1em;
-				padding-left: 1em;
+			&:first-child {
+				border-left: 0;
+				margin-left: 0;
+				padding-left: 0;
+			}
 
-				&:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
-
-				a {
-					color: inherit;
-				}
+			a {
+				color: inherit;
 			}
 		}
 	}
@@ -1708,20 +1703,18 @@
 
 		/* Footer */
 
-			#footer {
+			footer {
 				text-align: center;
 
 				.copyright {
-					li {
-						border-left: 0;
-						display: block;
-						line-height: 1.75em;
-						margin: 0.75em 0 0 0;
-						padding-left: 0;
+					border-left: 0;
+					display: block;
+					line-height: 1.75em;
+					margin: 0.75em 0 0 0;
+					padding-left: 0;
 
-						&:first-child {
-							margin-top: 0;
-						}
+					&:first-child {
+						margin-top: 0;
 					}
 				}
 			}
