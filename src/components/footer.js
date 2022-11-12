@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 const Footer = () => (
-  <footer>
-    <div class="container copyright">
-      <FontAwesomeIcon icon={solid('copyright')} color="#64a2d0" /> 
-      2022 Nikole Garcia. All rights reserved.
+  <section id="footer">
+    <div class="container">
+      <ul class="copyright">
+        <li><FontAwesomeIcon icon={solid('copyright')} color="#64a2d0" /> Untitled. All rights reserved.</li>
+      </ul>
     </div>
-  </footer>
+  </section>
 )
 
 export default Footer
