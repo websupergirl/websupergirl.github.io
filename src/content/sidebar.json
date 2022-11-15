@@ -1,0 +1,34 @@
+{
+  "header": [
+    {
+      "title": "Main Title",
+      "subtitle": "Subtitle",
+      "logoImg": "../assets/images/logo.jpb",
+      "logoAlt": "site logo"
+    }
+  ],
+  "sidebar": [
+    {
+      "text": "Section 1",
+      "anchor": "anchor1"
+    },
+    {
+      "text": "Section 2",
+      "anchor": "anchor2"
+    },
+    {
+      "text": "Section 3",
+      "anchor": "anchor3"
+    },
+    {
+      "text": "Section 4",
+      "anchor": "anchor4"
+    },
+  ],
+  "credits": [
+    {
+      "text": "Site Credits Text",
+      "link": "url"
+    }
+  ]
+}

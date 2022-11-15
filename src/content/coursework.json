@@ -1,0 +1,16 @@
+{
+  "courses": [
+    {
+      "course": "Some Course"
+    },
+    {
+      "course": "Some Other Course"
+    },
+    {
+      "course": "Some Third Course"
+    },
+    {
+      "course": "Oh Look a Fourth"
+    },
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "community": [
+    {
+      "title": "Cool Position",
+      "description": "Here is a good description.",
+      "year": "2025"
+    },
+    {
+      "title": "Board Member",
+      "description": "Here is a good description.",
+      "year": "2023"
+    },
+    {
+      "title": "Volunteer",
+      "description": "Here is a good description.",
+      "year": "2021"
+    }
+  ]
+}
