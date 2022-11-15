@@ -9,6 +9,8 @@ import Footer from "../components/footer"
 
 import Seo from "../components/seo"
 
+import { Script } from "gatsby"
+
 import "../assets/css/main.css"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -28,6 +30,8 @@ const IndexPage = () => (
       </div>
       <Footer />
     </div>
+    <Script src="../assets/js/util.js" />
+    <Script src="../assets/js/main.js" />
   </>
 )
 
