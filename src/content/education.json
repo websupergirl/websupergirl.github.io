@@ -1,6 +1,7 @@
 [
     {
-    "education": [
+      "anchor":"education",
+      "education": [
       {
         "school": "My University",
         "degree": "BS, Magic",
