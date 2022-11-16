@@ -1,28 +1,30 @@
-{
-  "experience": [
-    {
-      "title": "Job Title",
-      "company": "The Company",
-      "startDate": "January 1900",
-      "endDate": "Present"
-    },
-    {
-      "title": "Job Title",
-      "company": "The Company",
-      "startDate": "January 1900",
-      "endDate": "Present"
-    },
-    {
-      "title": "Job Title",
-      "company": "The Company",
-      "startDate": "January 1900",
-      "endDate": "Present"
-    },
-    {
-      "title": "Job Title",
-      "company": "The Company",
-      "startDate": "January 1900",
-      "endDate": "Present"
-    },
-  ]
-}
+[
+  {
+    "experience": [
+      {
+        "title": "Job Title",
+        "company": "The Company",
+        "startDate": "January 1900",
+        "endDate": "Present"
+      },
+      {
+        "title": "Job Title",
+        "company": "The Company",
+        "startDate": "January 1900",
+        "endDate": "Present"
+      },
+      {
+        "title": "Job Title",
+        "company": "The Company",
+        "startDate": "January 1900",
+        "endDate": "Present"
+      },
+      {
+        "title": "Job Title",
+        "company": "The Company",
+        "startDate": "January 1900",
+        "endDate": "Present"
+      }
+    ]
+  }
+]

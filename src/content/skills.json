@@ -1,16 +1,18 @@
-{
-  "skills": [
-    {
-      "stack": "LAMP"
-    },
-    {
-      "stack": "MERN"
-    },
-    {
-      "stack": "JAM"
-    },
-    {
-      "stack": "WordPress"
-    },
-  ]
-}
+[
+  {
+    "skills": [
+      {
+        "stack": "LAMP"
+      },
+      {
+        "stack": "MERN"
+      },
+      {
+        "stack": "JAM"
+      },
+      {
+        "stack": "WordPress"
+      }
+    ]
+  }
+]

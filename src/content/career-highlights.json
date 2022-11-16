@@ -1,12 +1,14 @@
-{
-  "highlights": [
-    {
-      "link": "url",
-      "linkText": "This is some text"
-    },
-    {
-      "link": "url2",
-      "linkText": "This is some text2"
-    }
-  ]
-}
+[
+  {
+    "highlights": [
+      {
+        "link": "url",
+        "linkText": "This is some text"
+      },
+      {
+        "link": "url2",
+        "linkText": "This is some text2"
+      }
+    ]
+  }
+]
