@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -16,8 +17,6 @@ const Sidebar = () => {
           header {
             email
             location
-            logoAlt
-            logoImg
             phone
             pronouns
             sidebarName
@@ -41,7 +40,13 @@ const Sidebar = () => {
     <section id="sidebar">
       <header>
         <span className="image avatar">
-          <img src="images/avatar.jpg" alt="" />
+        <StaticImage
+        src="../assets/images/gatsby-icon.png"
+        loading="eager"
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt={sidebarData.allSidebarJson.nodes[0].header[0].sidebarName}
+      />
         </span>
         <h1 id="logo">
           {sidebarData.allSidebarJson.nodes[0].header[0].sidebarName}
@@ -52,7 +57,7 @@ const Sidebar = () => {
         <ul>
           {sidebarData.allSidebarJson.nodes[0].sidebar.map(node => (
             <li key={node.anchor}>
-              <AnchorLink to={("#" + node.anchor)} title={node.text} />
+              <AnchorLink to={"#" + node.anchor} title={node.text} />
             </li>
           ))}
         </ul>
@@ -63,7 +68,7 @@ const Sidebar = () => {
             <li key={node.icon}>
               <a className="socials" href={node.link}>
                 <FontAwesomeIcon
-                  icon={[(node.prefix), (node.icon)]}
+                  icon={[node.prefix, node.icon]}
                   className="social-icon"
                 />
               </a>

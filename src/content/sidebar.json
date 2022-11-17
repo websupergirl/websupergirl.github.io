@@ -7,9 +7,7 @@
         "location": "City, State COUNTRY",
         "phone": "(555)555-1212",
         "email": "email",
-        "pronouns": "My Pronouns",
-        "logoImg": "../assets/images/logo.jpg",
-        "logoAlt": "site logo"
+        "pronouns": "My Pronouns"
       }
     ],
     "sidebar": [
