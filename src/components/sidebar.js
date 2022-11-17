@@ -9,7 +9,7 @@ let faPrefix = null
 let anchorLink = "#"
 
 const Sidebar = () => {
-  const sidebar = useStaticQuery(graphql`
+  const sidebarData = useStaticQuery(graphql`
     query SidebarQuery {
       allSidebarJson {
         nodes {
@@ -48,13 +48,13 @@ const Sidebar = () => {
           <img src="images/avatar.jpg" alt="" />
         </span>
         <h1 id="logo">
-          {sidebar.allSidebarJson.nodes[0].header[0].sidebarName}
+          {sidebarData.allSidebarJson.nodes[0].header[0].sidebarName}
         </h1>
-        <p>{sidebar.allSidebarJson.nodes[0].header[0].sidebarTitle}</p>
+        <p>{sidebarData.allSidebarJson.nodes[0].header[0].sidebarTitle}</p>
       </header>
       <nav id="nav">
         <ul>
-          {sidebar.allSidebarJson.nodes[0].sidebar.map(node => (
+          {sidebarData.allSidebarJson.nodes[0].sidebar.map(node => (
             <li key={node.anchor}>
               <AnchorLink to={(anchorLink = "#" + node.anchor)} title={node.text} />
             </li>
@@ -63,7 +63,7 @@ const Sidebar = () => {
       </nav>
       <footer>
         <ul class="icons">
-          {sidebar.allSidebarJson.nodes[0].socials.map(node => (
+          {sidebarData.allSidebarJson.nodes[0].socials.map(node => (
             <li key={node.icon}>
               <a class="socials" href={node.link}>
                 <FontAwesomeIcon
