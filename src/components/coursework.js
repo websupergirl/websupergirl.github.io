@@ -24,7 +24,7 @@ return (
     <ul class="feature-icons">
     {courseworkData.allCourseworkJson.nodes[0].courses.map(node => (
       <li key={node.course}>
-          <FontAwesomeIcon icon={"fas", "star"} color="#64a2d0" /> {node.course}
+          <FontAwesomeIcon icon={("fas", "star")} color="#64a2d0" /> {node.course}
       </li>
     ))}
     </ul>

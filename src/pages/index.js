@@ -10,7 +10,6 @@ import Publications from "../components/publications"
 import Community from "../components/community"
 import Education from "../components/education"
 import Coursework from "../components/coursework"
-import Three from "../components/section-three"
 import Interests from "../components/interests"
 import Footer from "../components/footer"
 
@@ -42,7 +41,6 @@ const IndexPage = () => (
         <Community />
         <Education />
         <Coursework />
-        <Three />
         <Interests />
       </div>
       <Footer />

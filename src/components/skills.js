@@ -24,7 +24,7 @@ return (
     <ul class="feature-icons">
     {skillsData.allSkillsJson.nodes[0].skills.map(node => (
       <li key={node.stack}>
-          <FontAwesomeIcon icon={"fas", "star"} color="#64a2d0" /> {node.stack}
+          <FontAwesomeIcon icon={("fas", "star")} color="#64a2d0" /> {node.stack}
       </li>
     ))}
     </ul>

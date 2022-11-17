@@ -4,10 +4,6 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-let faIcon = null
-let faPrefix = null
-let anchorLink = "#"
-
 const Sidebar = () => {
   const sidebarData = useStaticQuery(graphql`
     query SidebarQuery {
@@ -56,7 +52,7 @@ const Sidebar = () => {
         <ul>
           {sidebarData.allSidebarJson.nodes[0].sidebar.map(node => (
             <li key={node.anchor}>
-              <AnchorLink to={(anchorLink = "#" + node.anchor)} title={node.text} />
+              <AnchorLink to={("#" + node.anchor)} title={node.text} />
             </li>
           ))}
         </ul>
@@ -67,7 +63,7 @@ const Sidebar = () => {
             <li key={node.icon}>
               <a class="socials" href={node.link}>
                 <FontAwesomeIcon
-                  icon={[(faPrefix = node.prefix), (faIcon = node.icon)]}
+                  icon={[(node.prefix), (node.icon)]}
                   className="social-icon"
                 />
               </a>

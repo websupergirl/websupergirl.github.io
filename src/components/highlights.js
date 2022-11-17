@@ -24,7 +24,7 @@ return (
     <ul class="feature-icons">
     {highlightsData.allHighlightsJson.nodes[0].highlights.map(node => (
       <li key={node.highlight}>
-          <FontAwesomeIcon icon={"fas", "star"} color="#64a2d0" /> {node.highlight}
+          <FontAwesomeIcon icon={("fas", "star")} color="#64a2d0" /> {node.highlight}
       </li>
     ))}
     </ul>
