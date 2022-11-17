@@ -1,28 +1,46 @@
 import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-const One = () => (
-  <section id="one">
-    <div class="image main" data-position="center">
-      <StaticImage
-        src="../assets/images/banner.jpg"
-        loading="eager"
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt="banner"
-      />
-    </div>
-    <div class="container">
-    <header class="major">
-      <h2>Read Only</h2>
-      <p>Eget et adipiscing ornare vestibulum quam<br />
-      interdum blandit ut Adipiscing.</p>
-    </header>
-    <p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
-  </div>
-  </section>
-)
+const One = () => {
+
+  const intro = useStaticQuery(graphql`
+    query IntroQuery {
+      allIntroJson {
+        nodes {
+          anchor
+          intro {
+            name
+            intro
+            title
+          }
+        }
+      }
+    }
+  `)
+  console.log({intro})
+
+  return (
+      <section id={intro.allIntroJson.nodes[0].anchor}>
+        <div class="image main" data-position="center">
+          <StaticImage
+            src="../assets/images/banner.jpg"
+            loading="eager"
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="banner"
+          />
+        </div>
+        <div class="container">
+        <header class="major">
+          <h2>{intro.allIntroJson.nodes[0].intro[0].name}</h2>
+          <p>{intro.allIntroJson.nodes[0].intro[0].title}</p>
+        </header>
+        <p>{intro.allIntroJson.nodes[0].intro[0].intro}</p>
+      </div>
+      </section>
+  )
+
+}
 
 export default One
