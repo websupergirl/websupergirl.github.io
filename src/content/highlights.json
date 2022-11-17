@@ -1,0 +1,16 @@
+[
+  {
+    "anchor":"highlights",
+    "highlights": [
+      {
+        "highlight": "I did this"
+      },
+      {
+        "highlight": "I also did this"
+      },
+      {
+        "highlight": "And I did this"
+      }
+    ]
+  }
+]

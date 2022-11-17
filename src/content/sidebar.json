@@ -14,20 +14,44 @@
     ],
     "sidebar": [
       {
-        "text": "Section 1",
+        "text": "Introduction",
         "anchor": "intro"
       },
       {
-        "text": "Section 2",
-        "anchor": "anchor2"
+        "text": "Highlights",
+        "anchor": "highlights"
       },
       {
-        "text": "Section 3",
-        "anchor": "anchor3"
+        "text": "Experience",
+        "anchor": "experience"
       },
       {
-        "text": "Section 4",
-        "anchor": "anchor4"
+        "text": "Skills",
+        "anchor": "skills"
+      },
+      {
+        "text": "Speaking",
+        "anchor": "speaking"
+      },
+      {
+        "text": "Publications",
+        "anchor": "publications"
+      },
+      {
+        "text": "Community",
+        "anchor": "community"
+      },
+      {
+        "text": "Education",
+        "anchor": "education"
+      },
+      {
+        "text": "Coursework",
+        "anchor": "coursework"
+      },
+      {
+        "text": "Interests",
+        "anchor": "interests"
       }
     ],
     "credits": [

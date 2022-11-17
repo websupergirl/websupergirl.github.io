@@ -1,0 +1,22 @@
+[
+  {
+    "anchor":"publications",
+    "publications": [
+      {
+        "title": "Title of Publication",
+        "description": "Here is a good description.",
+        "link": "url"
+      },
+      {
+        "title": "Title of Publication",
+        "description": "Description 2.",
+        "link": "url2"
+      },
+      {
+        "title": "Title of Publication",
+        "description": "Another description.",
+        "link": "url3"
+      }
+    ]
+  }
+]

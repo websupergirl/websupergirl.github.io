@@ -3,11 +3,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { fas } from "@fortawesome/free-solid-svg-icons"
-import { fab } from "@fortawesome/free-brands-svg-icons"
-
-library.add(fab, fas)
 
 let faIcon = null
 let faPrefix = null
@@ -45,7 +40,6 @@ const Sidebar = () => {
       }
     }
   `)
-  console.log({ sidebar })
 
   return (
     <section id="sidebar">
