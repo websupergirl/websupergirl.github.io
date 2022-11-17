@@ -19,9 +19,9 @@ const Coursework = () => {
 
 return (
   <section id={courseworkData.allCourseworkJson.nodes[0].anchor}>
-    <div class="container">
+    <div className="container">
     <h3>Coursework</h3>
-    <ul class="feature-icons">
+    <ul className="feature-icons">
     {courseworkData.allCourseworkJson.nodes[0].courses.map(node => (
       <li key={node.course}>
           <FontAwesomeIcon icon={("fas", "star")} color="#64a2d0" /> {node.course}

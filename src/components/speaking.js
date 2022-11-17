@@ -20,7 +20,7 @@ const Speaking = () => {
 
 return (
   <section id={speakingData.allSpeakingJson.nodes[0].anchor}>
-    <div class="container">
+    <div className="container">
     <h3>Speaking Events</h3>
     <ul>
     {speakingData.allSpeakingJson.nodes[0].speaking.map(node => (

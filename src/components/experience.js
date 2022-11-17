@@ -21,7 +21,7 @@ const Experience = () => {
 
 return (
   <section id={experienceData.allExperienceJson.nodes[0].anchor}>
-    <div class="container">
+    <div className="container">
     <h3>Experience</h3>
     <ul>
     {experienceData.allExperienceJson.nodes[0].experience.map(node => (

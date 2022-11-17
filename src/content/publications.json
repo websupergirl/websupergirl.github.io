@@ -3,17 +3,17 @@
     "anchor":"publications",
     "publications": [
       {
-        "title": "Title of Publication",
+        "title": "Title of Publication 1",
         "description": "Here is a good description.",
         "link": "url"
       },
       {
-        "title": "Title of Publication",
+        "title": "Title of Publication 2",
         "description": "Description 2.",
         "link": "url2"
       },
       {
-        "title": "Title of Publication",
+        "title": "Title of Publication 3",
         "description": "Another description.",
         "link": "url3"
       }

@@ -20,7 +20,7 @@ const Community = () => {
 
 return (
   <section id={communityData.allCommunityJson.nodes[0].anchor}>
-    <div class="container">
+    <div className="container">
     <h3>Community Engagements</h3>
     <ul>
     {communityData.allCommunityJson.nodes[0].community.map(node => (

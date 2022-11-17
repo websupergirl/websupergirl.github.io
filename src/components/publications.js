@@ -19,7 +19,7 @@ const Publications = () => {
 
   return (
     <section id={publicationsData.allPublicationsJson.nodes[0].anchor}>
-      <div class="container">
+      <div className="container">
         <h3>Publications</h3>
         <ul>
           {publicationsData.allPublicationsJson.nodes[0].publications.map(

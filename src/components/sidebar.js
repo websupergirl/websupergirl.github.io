@@ -40,7 +40,7 @@ const Sidebar = () => {
   return (
     <section id="sidebar">
       <header>
-        <span class="image avatar">
+        <span className="image avatar">
           <img src="images/avatar.jpg" alt="" />
         </span>
         <h1 id="logo">
@@ -58,10 +58,10 @@ const Sidebar = () => {
         </ul>
       </nav>
       <footer>
-        <ul class="icons">
+        <ul className="icons">
           {sidebarData.allSidebarJson.nodes[0].socials.map(node => (
             <li key={node.icon}>
-              <a class="socials" href={node.link}>
+              <a className="socials" href={node.link}>
                 <FontAwesomeIcon
                   icon={[(node.prefix), (node.icon)]}
                   className="social-icon"

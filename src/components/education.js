@@ -20,7 +20,7 @@ const Education = () => {
 
 return (
   <section id={educationData.allEducationJson.nodes[0].anchor}>
-    <div class="container">
+    <div className="container">
     <h3>Education</h3>
     <ul>
     {educationData.allEducationJson.nodes[0].education.map(node => (

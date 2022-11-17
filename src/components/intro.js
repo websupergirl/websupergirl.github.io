@@ -21,7 +21,7 @@ const Intro = () => {
 
   return (
       <section id={introData.allIntroJson.nodes[0].anchor}>
-        <div class="image main" data-position="center">
+        <div className="image main" data-position="center">
           <StaticImage
             src="../assets/images/banner.jpg"
             loading="eager"
@@ -30,8 +30,8 @@ const Intro = () => {
             alt="banner"
           />
         </div>
-        <div class="container">
-        <header class="major">
+        <div className="container">
+        <header className="major">
           <h2>{introData.allIntroJson.nodes[0].intro[0].name}</h2>
           <p>{introData.allIntroJson.nodes[0].intro[0].title}</p>
         </header>

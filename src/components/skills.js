@@ -19,9 +19,9 @@ const Skills = () => {
 
 return (
   <section id={skillsData.allSkillsJson.nodes[0].anchor}>
-    <div class="container">
+    <div className="container">
     <h3>Skills</h3>
-    <ul class="feature-icons">
+    <ul className="feature-icons">
     {skillsData.allSkillsJson.nodes[0].skills.map(node => (
       <li key={node.stack}>
           <FontAwesomeIcon icon={("fas", "star")} color="#64a2d0" /> {node.stack}

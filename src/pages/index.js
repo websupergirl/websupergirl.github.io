@@ -15,8 +15,6 @@ import Footer from "../components/footer"
 
 import Seo from "../components/seo"
 
-import { Script } from "gatsby"
-
 import "../assets/css/main.css"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
@@ -24,8 +22,6 @@ import { fas } from "@fortawesome/free-solid-svg-icons"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 
 library.add(fab, fas)
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
   <>
@@ -45,8 +41,6 @@ const IndexPage = () => (
       </div>
       <Footer />
     </div>
-    <Script src="../assets/js/util.js" />
-    <Script src="../assets/js/main.js" />
   </>
 )
 

@@ -17,7 +17,7 @@ const Interests = () => {
 
   return (
     <section id={interestsData.allInterestsJson.nodes[0].anchor}>
-      <div class="container">
+      <div className="container">
         <h3>Interests</h3>
         <p>{interestsData.allInterestsJson.nodes[0].interests[0].text}</p>
       </div>
