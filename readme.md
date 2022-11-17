@@ -8,6 +8,7 @@ I would recommend that you have node 18 for this project, although [Gatsby techn
 
 You will also need the [Gatsby CLI](https://www.gatsbyjs.com/docs/reference/gatsby-cli/), currently at version 4.
 
+### To Setup the Dev Server
 ```
 git clone [this repo]
 cd [dir]
