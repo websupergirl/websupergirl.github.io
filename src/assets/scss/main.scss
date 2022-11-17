@@ -364,7 +364,7 @@
 
 				& + p {
 					color: _palette(fg-bold);
-					font-size: 1.75em;
+					font-size: 1.25em;
 					font-weight: _font(weight-bold);
 					margin-top: -0.75em;
 				}
@@ -936,6 +936,28 @@
 			}
 		}
 	}
+
+  a.socials {
+    border-bottom-color: transparent;
+    color: _palette(header, fg-light) !important;
+
+    .social-icon {
+      border-bottom-color: transparent;
+      color: _palette(header, fg-light) !important;
+      
+      &:hover {
+        border-bottom-color: $border-bottom-color_1transparent;
+        color: _palette(header, border) !important;
+      }
+
+    }
+
+    &:hover {
+      border-bottom-color: transparent;
+      color: _palette(header, border) !important;
+    }
+
+  }
 
 /* Table */
 
@@ -1631,7 +1653,7 @@
 						font-size: 2.5em;
 
 						& + p {
-							font-size: 1.5em;
+							font-size: 1.25em;
 						}
 					}
 				}

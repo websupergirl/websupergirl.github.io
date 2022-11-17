@@ -1790,8 +1790,8 @@ input, select, textarea {
 
 		header.major h2 + p {
 			color: #777;
-			font-size: 1.75em;
-			font-weight: 700;
+			font-size: 1.25em;
+			font-weight: 400;
 			margin-top: -0.75em;
 		}
 
@@ -2178,6 +2178,16 @@ input, select, textarea {
 			ul.icons li .icon:before {
 				font-size: 1.25em;
 			}
+
+  a.socials, a.socials .social-icon {
+    border-bottom-color: transparent;
+    color: #b7eadc !important;
+  }
+  
+    a.socials:hover, a.socials .social-icon:hover {
+      border-bottom-color: transparent;
+      color: #5ccfb1 !important;
+    }
 
 /* Table */
 
@@ -2807,7 +2817,7 @@ input, select, textarea {
 			}
 
 				header.major h2 + p {
-					font-size: 1.5em;
+					font-size: 1.25em;
 				}
 
 		/* Features */
