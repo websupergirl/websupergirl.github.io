@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -71,10 +71,10 @@ const Sidebar = () => {
         <ul class="icons">
           {sidebar.allSidebarJson.nodes[0].socials.map(node => (
             <li key={node.icon}>
-              <a href={node.link}>
+              <a class="socials" href={node.link}>
                 <FontAwesomeIcon
                   icon={[(faPrefix = node.prefix), (faIcon = node.icon)]}
-                  color="#b7eadc"
+                  className="social-icon"
                 />
               </a>
             </li>

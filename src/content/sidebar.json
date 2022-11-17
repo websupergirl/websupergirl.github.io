@@ -40,32 +40,32 @@
       {
         "icon": "twitter",
         "prefix": "fab",
-        "link": "anchor1"
+        "link": "https://twitter.com/"
       },
       {
         "icon": "instagram",
         "prefix": "fab",
-        "link": "anchor1"
+        "link": "https://www.instagram.com/"
       },
       {
         "icon": "github",
         "prefix": "fab",
-        "link": "anchor1"
+        "link": "https://github.com/"
       },
       {
         "icon": "linkedin",
         "prefix": "fab",
-        "link": "anchor1"
+        "link": "https://www.linkedin.com/"
       },
       {
         "icon": "phone",
         "prefix": "fas",
-        "link": "anchor1"
+        "link": "tel:123-456-7890"
       },
       {
         "icon": "envelope",
         "prefix": "fas",
-        "link": "anchor1"
+        "link": "mailto:email@example.com"
       }
     ]
   }
