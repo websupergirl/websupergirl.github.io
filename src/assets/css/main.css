@@ -2559,7 +2559,7 @@ input, select, textarea {
 						text-decoration: none;
 					}
 
-						#sidebar > nav ul li a.active {
+						#sidebar > nav ul li a.active, #sidebar > nav ul li a:hover {
 							background: #fff;
 							color: #64a2d0 !important;
 						}

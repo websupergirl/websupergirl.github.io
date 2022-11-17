@@ -1276,6 +1276,11 @@
 							background: _palette(bg);
 							color: _palette(header, bg) !important;
 						}
+
+						&:hover {
+							background: _palette(bg);
+							color: _palette(header, bg) !important;
+						}
 					}
 
 					&:first-child {
