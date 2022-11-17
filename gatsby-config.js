@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Nikole Garcia, Full Stack Developer`,
+    title: `Site Title`,
     description: `A portfolio / resume site built from Gatsby Starter and Read only from HTML5 UP`,
     author: `@websupergirl`,
     siteUrl: `https://supernikole.com/`,
@@ -15,6 +15,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content/`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
