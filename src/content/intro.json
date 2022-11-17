@@ -4,10 +4,7 @@
     "intro": [
       {
         "name": "My Big Name",
-        "location": "City, State COUNTRY",
-        "phone": "(555)555-1212",
-        "email": "email",
-        "pronouns": "My Pronouns",
+        "title": "My Catchy Title",
         "intro": "This is a short introductory paragraph."
       }
     ]

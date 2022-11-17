@@ -2,9 +2,13 @@
     {
     "header": [
       {
-        "title": "Main Title",
-        "subtitle": "Subtitle",
-        "logoImg": "../assets/images/logo.jpb",
+        "sidebarName": "My Name",
+        "sidebarTitle": "Developer",
+        "location": "City, State COUNTRY",
+        "phone": "(555)555-1212",
+        "email": "email",
+        "pronouns": "My Pronouns",
+        "logoImg": "../assets/images/logo.jpg",
         "logoAlt": "site logo"
       }
     ],
@@ -30,6 +34,38 @@
       {
         "text": "Site Credits Text",
         "link": "url"
+      }
+    ],
+    "socials": [
+      {
+        "icon": "twitter",
+        "prefix": "fab",
+        "link": "anchor1"
+      },
+      {
+        "icon": "instagram",
+        "prefix": "fab",
+        "link": "anchor1"
+      },
+      {
+        "icon": "github",
+        "prefix": "fab",
+        "link": "anchor1"
+      },
+      {
+        "icon": "linkedin",
+        "prefix": "fab",
+        "link": "anchor1"
+      },
+      {
+        "icon": "phone",
+        "prefix": "fas",
+        "link": "anchor1"
+      },
+      {
+        "icon": "envelope",
+        "prefix": "fas",
+        "link": "anchor1"
       }
     ]
   }
