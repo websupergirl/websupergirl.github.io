@@ -1,33 +1,88 @@
 import * as React from "react"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fas } from "@fortawesome/free-solid-svg-icons"
+import { fab } from "@fortawesome/free-brands-svg-icons"
 
-const Sidebar = () => (
-  <section id="sidebar">
-    <header>
-      <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-      <h1 id="logo"><a href="#">Jane Doe</a></h1>
-      <p>Non col pellentesque ut cep augue at<br />
-      cep ata sed commodo quam</p>
-    </header>
-    <nav id="nav">
-      <ul>
-        <li><a href="#one" class="active">About</a></li>
-        <li><a href="#two">Things I Can Do</a></li>
-        <li><a href="#three">A Few Accomplishments</a></li>
-        <li><a href="#four">Contact</a></li>
-      </ul>
-    </nav>
-    <footer>
-      <ul class="icons">
-        <li><a href="#"><FontAwesomeIcon icon={brands('Twitter')} color="#b7eadc" /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon={brands('Instagram')} color="#b7eadc" /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon={brands('Github')} color="#b7eadc" /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon={brands('LinkedIn')} color="#b7eadc" /></a></li>
-      </ul>
-    </footer>
-  </section>
-)
+library.add(fab, fas)
+
+let faIcon = null
+let faPrefix = null
+let anchorLink = "#"
+
+const Sidebar = () => {
+  const sidebar = useStaticQuery(graphql`
+    query SidebarQuery {
+      allSidebarJson {
+        nodes {
+          credits {
+            link
+            text
+          }
+          header {
+            email
+            location
+            logoAlt
+            logoImg
+            phone
+            pronouns
+            sidebarName
+            sidebarTitle
+          }
+          sidebar {
+            anchor
+            text
+          }
+          socials {
+            icon
+            prefix
+            link
+          }
+        }
+      }
+    }
+  `)
+  console.log({ sidebar })
+
+  return (
+    <section id="sidebar">
+      <header>
+        <span class="image avatar">
+          <img src="images/avatar.jpg" alt="" />
+        </span>
+        <h1 id="logo">
+          {sidebar.allSidebarJson.nodes[0].header[0].sidebarName}
+        </h1>
+        <p>{sidebar.allSidebarJson.nodes[0].header[0].sidebarTitle}</p>
+      </header>
+      <nav id="nav">
+        <ul>
+          {sidebar.allSidebarJson.nodes[0].sidebar.map(node => (
+            <li key={node.anchor}>
+              <AnchorLink to={(anchorLink = "#" + node.anchor)} title={node.text} />
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <footer>
+        <ul class="icons">
+          {sidebar.allSidebarJson.nodes[0].socials.map(node => (
+            <li key={node.icon}>
+              <a href={node.link}>
+                <FontAwesomeIcon
+                  icon={[(faPrefix = node.prefix), (faIcon = node.icon)]}
+                  color="#b7eadc"
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </footer>
+    </section>
+  )
+}
 
 export default Sidebar
