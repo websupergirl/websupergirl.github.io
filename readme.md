@@ -2,6 +2,19 @@
 
 This is the source code for my portfolio/professional website at [supernikole.com](https://supernikole.com/)
 
+## Installation
+
+I would recommend that you have node 18 for this project, although [Gatsby technically still works with node 14 or 16](https://www.gatsbyjs.com/docs/upgrading-node-js/).
+
+You will also need the [Gatsby CLI](https://www.gatsbyjs.com/docs/reference/gatsby-cli/), currently at version 4.
+
+```
+git clone [this repo]
+cd [dir]
+git checkout [correct branch]
+npm install
+gatsby develop
+```
 
 ## Credits
 
