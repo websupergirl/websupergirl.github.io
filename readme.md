@@ -26,4 +26,5 @@ The site is hosted on [Github Pages](https://pages.github.com/) using a modified
 The site uses Gatsby and Sass.
 
 ## Changelog
+* gatsby-conversion to utilize gatsby fully
 * v3 init with gatsby-starter-default
