@@ -5,8 +5,12 @@ This is the source code for my portfolio/professional website at [supernikole.co
 
 ## Credits
 
-The site was created on [Github Pages](https://pages.github.com/) using a modified version of the [Start Bootstrap Resume theme](https://startbootstrap.com/themes/resume/).
+
 
 ## Tech
 
-It's just html, css, and Bootstrap 5, because sometimes simple is best and we all know I'm not a designer.
+I'm trying to rebuild this portfolio with Claude Sonnet 4 as a little experiment. I am finding that even when I specifically ask Claude to take the content from an existing live site, it will summarize and sort of wash the content into something generically pleasing. I do like the look but it took a few tries to get there, and again it was using generic elements instead of a specific logo and background I had asked for.
+
+## Next Steps
+
+Refining content, blending the aesthetic with all the missing content, cleaning up the repo.

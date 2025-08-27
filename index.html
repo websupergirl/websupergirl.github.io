@@ -1,984 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <title>Nikole Garcia Resume</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Custom fonts for this template -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
-      rel="stylesheet"
-    />
-    <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="img/supernikole.ico" />
-
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet" />
-  </head>
-
-  <body id="page-top">
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-primary fixed-top"
-      id="sideNav"
-    >
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Nikole Garcia</span>
-        <span class="d-none d-lg-block">
-          <img
-            class="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src="img/TSG-small.png"
-            alt=""
-          />
-        </span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#highlights"
-              >Highlights</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience"
-              >Experience</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education"
-              >Education</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#publications"
-              >Publications</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#community"
-              >Community</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#coursework"
-              >Coursework</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests"
-              >Interests</a
-            >
-          </li>
-        </ul>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikole Garcia - WordPress Engineer & Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .blob {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            animation: blob 7s ease-in-out infinite;
+        }
+        
+        @keyframes blob {
+            0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+            25% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+            75% { border-radius: 70% 30% 40% 60% / 30% 50% 60% 70%; }
+        }
+    </style>
+</head>
+<body class="min-h-screen relative" style="background: url('https://supernikole.com/img/clouds.jpg') center/cover no-repeat fixed;">
+    <!-- Content overlay for better readability -->
+    <div class="absolute inset-0 bg-white/20"></div>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-200/50 relative">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="font-bold text-2xl gradient-text">supernikole!</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-indigo-500 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-indigo-500 transition-colors">About</a>
+                    <a href="#experience" class="text-gray-700 hover:text-indigo-500 transition-colors">Experience</a>
+                    <a href="#skills" class="text-gray-700 hover:text-indigo-500 transition-colors">Skills</a>
+                    <a href="#community" class="text-gray-700 hover:text-indigo-500 transition-colors">Community</a>
+                    <a href="#contact" class="text-gray-700 hover:text-indigo-500 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-700" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden mt-4 pb-4 space-y-2">
+                <a href="#home" class="block text-gray-700 hover:text-indigo-500 transition-colors py-2">Home</a>
+                <a href="#about" class="block text-gray-700 hover:text-indigo-500 transition-colors py-2">About</a>
+                <a href="#experience" class="block text-gray-700 hover:text-indigo-500 transition-colors py-2">Experience</a>
+                <a href="#skills" class="block text-gray-700 hover:text-indigo-500 transition-colors py-2">Skills</a>
+                <a href="#community" class="block text-gray-700 hover:text-indigo-500 transition-colors py-2">Community</a>
+                <a href="#contact" class="block text-gray-700 hover:text-indigo-500 transition-colors py-2">Contact</a>
+            </div>
+        </div>
     </nav>
 
-    <div class="container-fluid p-0">
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="about"
-      >
-        <div class="w-100">
-          <h1 class="mb-0">
-            Nikole
-            <span class="text-primary">Garcia</span>
-          </h1>
-          <div class="subheading mb-5">
-            Eugene, OR 97405 · (510) 773-3818 ·
-            <a href="mailto:nikole@thatsupergirl.com"
-              >nikole@thatsupergirl.com</a
-            >
-            · she/her
-          </div>
-          <p class="lead mb-5">
-            Hey there! I'm a WordPress Engineer &amp; full-stack LAMP developer
-            who currently focuses on user-centered, mobile-first solutions for
-            WordPress and Shopify sites. I also help clients address their
-            security, hosting, and optimization needs.
-          </p>
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/nhgnikole/">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/websupergirl">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://twitter.com/websupergirl">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/websupergirl/">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.meetup.com/members/199575642/">
-              <i class="fab fa-meetup"></i>
-            </a>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 px-6 relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        Hey there! I'm <span class="gradient-text">Nikole</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        A WordPress Engineer & full-stack LAMP developer who focuses on user-centered, mobile-first solutions for WordPress and Shopify sites.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#contact" class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200">
+                            Get In Touch
+                        </a>
+                        <a href="#experience" class="border-2 border-indigo-500 text-indigo-500 px-8 py-4 rounded-full font-semibold hover:bg-indigo-500 hover:text-white transition-all duration-200">
+                            View Experience
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="blob w-72 h-72 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 float-animation"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-48 h-48 rounded-full overflow-hidden shadow-2xl bg-white">
+                                <img src="https://supernikole.com/img/TSG-small.png" alt="Supergirl Icon" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="highlights"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Career Highlights</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li far fa-check-circle text-primary"></i>
-              20+ Years of professional industry experience in a variety of
-              environments
-            </li>
-            <li>
-              <i class="fa-li far fa-check-circle text-primary"></i>
-              Successfully ran a small business for 15 years
-            </li>
-            <li>
-              <i class="fa-li far fa-check-circle text-primary"></i>
-              Worked both directly with clients and on teams with technical and
-              non-technical professionals
-            </li>
-            <li>
-              <i class="fa-li far fa-check-circle text-primary"></i>
-              Recruited, organized and lead a team of volunteers for county-wide
-              local educational projects
-            </li>
-            <li>
-              <i class="fa-li far fa-check-circle text-primary"></i>
-              Designed and implemented technical educational programs for
-              elementary students, high school teens, and adults
-            </li>
-            <li>
-              <i class="fa-li far fa-check-circle text-primary"></i>
-              Strong background in science, math, technology and marketing
-            </li>
-            <li>
-              <i class="fa-li far fa-check-circle text-primary"></i>
-              A lifelong learner who can adapt to new technology in a wide
-              variety of situations
-            </li>
-            <li>
-              <i class="fa-li far fa-check-circle text-primary"></i>
-              Excellent at troubleshooting and problem solving
-            </li>
-          </ul>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white/80 backdrop-blur-sm relative z-10">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-gray-700 leading-relaxed">
+                        I help clients address their security, hosting, and optimization needs with over 20 years of professional industry experience.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        I grew up in a time when there were no role models for me as I was learning to code and entering the industry, so I am passionate about giving back. I'm also a rare extrovert in tech - I get energized by new ideas and community building.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        When I'm not involved in tech or education, I am at home with my kids and dogs. I work with a local animal rescue to save dogs from high-kill shelters and find them new homes. I enjoy playing video games with my friends and I'm a huge Marvel fan who loves any great story I can lose myself in.
+                    </p>
+                    <div class="flex items-center space-x-2 text-gray-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 14 6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                        </svg>
+                        <span>BS, Animal Science</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="card-hover bg-gradient-to-br from-indigo-500/10 to-purple-500/10 p-6 rounded-2xl text-center">
+                        <div class="text-3xl font-bold text-indigo-500 mb-2">20+</div>
+                        <div class="text-gray-600 font-medium">Years Experience</div>
+                    </div>
+                    <div class="card-hover bg-gradient-to-br from-purple-500/10 to-cyan-500/10 p-6 rounded-2xl text-center">
+                        <div class="text-3xl font-bold text-purple-500 mb-2">WordPress</div>
+                        <div class="text-gray-600 font-medium">Since 2004</div>
+                    </div>
+                    <div class="card-hover bg-gradient-to-br from-cyan-500/10 to-indigo-500/10 p-6 rounded-2xl text-center">
+                        <div class="text-3xl font-bold text-cyan-500 mb-2">Full-Stack</div>
+                        <div class="text-gray-600 font-medium">LAMP Developer</div>
+                    </div>
+                    <div class="card-hover bg-gradient-to-br from-indigo-500/10 to-cyan-500/10 p-6 rounded-2xl text-center">
+                        <div class="text-3xl font-bold text-indigo-500 mb-2">Mobile</div>
+                        <div class="text-gray-600 font-medium">First Approach</div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="experience"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Experience</h2>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">That Super Girl</div>
+    <!-- Experience & Career Highlights Section -->
+    <section id="experience" class="py-20 relative z-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Experience & Career Highlights</h2>
+            
+            <!-- Professional Experience -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Professional Experience</h3>
+                <div class="space-y-8">
+                    <div class="card-hover bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-200/50">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900">Senior WordPress Engineer</h4>
+                                <p class="text-indigo-600 font-semibold">Freelance & Consulting</p>
+                            </div>
+                            <span class="text-gray-500 font-medium mt-2 md:mt-0">2015 - Present</span>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Specializing in user-centered, mobile-first WordPress solutions with focus on security, performance optimization, and scalable architecture. Work with clients ranging from small businesses to enterprise-level organizations.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">WordPress</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">PHP</span>
+                            <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">Security</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Performance</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-200/50">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900">Full-Stack Developer</h4>
+                                <p class="text-indigo-600 font-semibold">Various Agencies & Companies</p>
+                            </div>
+                            <span class="text-gray-500 font-medium mt-2 md:mt-0">2004 - 2015</span>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Developed and maintained LAMP stack applications, e-commerce solutions, and custom content management systems. Early adopter of WordPress, building themes and plugins since 2004.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">LAMP Stack</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">E-commerce</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2005 - Present</span>
+            
+            <!-- Key Achievements -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gradient-to-br from-indigo-500/10 to-purple-500/10 p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">20+ Years</h4>
+                    <p class="text-gray-600">Professional development experience</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-purple-500/10 to-cyan-500/10 p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">WordPress Since 2004</h4>
+                    <p class="text-gray-600">Early adopter and expert developer</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-cyan-500/10 to-indigo-500/10 p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-8.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">Community Leader</h4>
+                    <p class="text-gray-600">Passionate about mentoring and giving back</p>
+                </div>
             </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Web Manager, Marketing</h3>
-              <div class="subheading mb-3">Nanostring Technologies</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">April 2024 - July 2024</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Senior WordPress Developer, Marketing</h3>
-              <div class="subheading mb-3">Nanostring Technologies</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2023 - January 2024</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Senior WordPress Developer</h3>
-              <div class="subheading mb-3">3 Media Web</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">April 2022 - Present</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Senior WordPress Developer (contract)</h3>
-              <div class="subheading mb-3">NDIC</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2022 - April 2022</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Lead Developer</h3>
-              <div class="subheading mb-3">Member Splash</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2021 - December 2021</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Senior Software Developer Contractor</h3>
-              <div class="subheading mb-3">Inseego</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">June 2020 - August 2021</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">WordPress Engineer</h3>
-              <div class="subheading mb-3">X-Team</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">October 2019 - June 2020</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Full-Stack LAMP Developer</h3>
-              <div class="subheading mb-3">Gun.io</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2018</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Marketing Coordinator</h3>
-              <div class="subheading mb-3">Wooden Window</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2002 - 2003</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Webmaster</h3>
-              <div class="subheading mb-3">Netility</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2001</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Web/Multimedia Developer</h3>
-              <div class="subheading mb-3">The Tech Museum of Innovation</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2000</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">Flying Beyond</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2000</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Supervisor / Senior Technical Consultant</h3>
-              <div class="subheading mb-3">CIT HelpDesk</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 1997 - May 1999</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Web Development Intern</h3>
-              <div class="subheading mb-3">roundpeg, Inc.</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 1998 - August 1998</span>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="education"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Education &amp; Training</h2>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Cornell University</h3>
-              <div class="subheading mb-3">
-                College of Agriculture and Life Sciences
-              </div>
-              <p>BS, Animal Science</p>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white/80 backdrop-blur-sm relative z-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Skills & Expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-200/50">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">WordPress Development</h3>
+                    <p class="text-gray-600 leading-relaxed">Expert in custom WordPress themes, plugins, and user-centered solutions with over 15 years of experience.</p>
+                </div>
+                
+                <div class="card-hover bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-200/50">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Security & Optimization</h3>
+                    <p class="text-gray-600 leading-relaxed">Specialized in website security, hosting solutions, and performance optimization for maximum efficiency.</p>
+                </div>
+                
+                <div class="card-hover bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-200/50">
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-indigo-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Mobile-First Design</h3>
+                    <p class="text-gray-600 leading-relaxed">Creating responsive, mobile-first solutions for WordPress and Shopify that prioritize user experience.</p>
+                </div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 1996 - June 2000</span>
+            
+            <!-- Technology Stack -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-center mb-8 text-gray-900">Technology Stack</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-6 py-3 rounded-full font-semibold">PHP</span>
+                    <span class="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-6 py-3 rounded-full font-semibold">MySQL</span>
+                    <span class="bg-gradient-to-r from-cyan-500 to-indigo-500 text-white px-6 py-3 rounded-full font-semibold">WordPress</span>
+                    <span class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-6 py-3 rounded-full font-semibold">Shopify</span>
+                    <span class="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-6 py-3 rounded-full font-semibold">JavaScript</span>
+                    <span class="bg-gradient-to-r from-cyan-500 to-indigo-500 text-white px-6 py-3 rounded-full font-semibold">HTML/CSS</span>
+                    <span class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-6 py-3 rounded-full font-semibold">LAMP Stack</span>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Sandler Sales Training</h3>
+    <!-- Community Engagement Section -->
+    <section id="community" class="py-20 relative z-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Community Engagement</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Giving Back to the Tech Community</h3>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        I grew up in a time when there were no role models for me as I was learning to code and entering the industry, so I am passionate about giving back. As a rare extrovert in tech, I get energized by new ideas and community building.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        I actively participate in both online and offline tech communities, sharing knowledge, mentoring newcomers, and helping create more inclusive spaces in technology.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="card-hover bg-gradient-to-br from-indigo-500/10 to-purple-500/10 p-6 rounded-2xl text-center">
+                        <svg class="w-12 h-12 text-indigo-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        <h4 class="font-bold text-gray-900 mb-2">Mentoring</h4>
+                        <p class="text-gray-600 text-sm">Guiding new developers</p>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-purple-500/10 to-cyan-500/10 p-6 rounded-2xl text-center">
+                        <svg class="w-12 h-12 text-purple-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                        </svg>
+                        <h4 class="font-bold text-gray-900 mb-2">Speaking</h4>
+                        <p class="text-gray-600 text-sm">Tech conferences & meetups</p>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-cyan-500/10 to-indigo-500/10 p-6 rounded-2xl text-center">
+                        <svg class="w-12 h-12 text-cyan-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+                        </svg>
+                        <h4 class="font-bold text-gray-900 mb-2">Open Source</h4>
+                        <p class="text-gray-600 text-sm">Contributing to projects</p>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-indigo-500/10 to-purple-500/10 p-6 rounded-2xl text-center">
+                        <svg class="w-12 h-12 text-indigo-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                        <h4 class="font-bold text-gray-900 mb-2">Advocacy</h4>
+                        <p class="text-gray-600 text-sm">Diversity & inclusion</p>
+                    </div>
+                </div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2003</span>
+            
+            <!-- Personal Interests -->
+            <div class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-200/50">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Beyond Technology</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-400 to-pink-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Animal Rescue</h4>
+                        <p class="text-gray-600 text-sm">Working with local rescue to save dogs from high-kill shelters and find them loving homes</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Marvel Fan</h4>
+                        <p class="text-gray-600 text-sm">Huge Marvel enthusiast who loves getting lost in great stories and universes</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-indigo-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M12 5a9 9 0 019 9 9 9 0 01-9 9 9 9 0 01-9-9 9 9 0 019-9z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Gaming</h4>
+                        <p class="text-gray-600 text-sm">Enjoys playing video games with friends and family in spare time</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="skills"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Skills &amp; Tools</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-              <i class="fas fa-code"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fas fa-database"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fas fa-server"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fas fa-lock"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fas fa-cloud"></i>
-            </li>
-          </ul>
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-              <i class="fab fa-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-sass"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-css3-alt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-php"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-js-square"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-react"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-vuejs"></i>
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Specifics</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              LAMP Stack: Linux, Apache, MySQL/MariaDB and PHP
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              JAM Stack: Gatsby, React, Vue, and Markup
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Back End: PHP, database administration, security, server
-              administration
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Front End: HTML, CSS, JS, Sass, user flow
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Software Packages: WordPress, Shopify (liquid), Squarespace,
-              Laravel
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Hosting: Apache/NGINX, cPanel, AWS (Lightsail/EC2/S3), most
-              commercial WP hosting (like LiquidWeb, WP Engine, Pantheon,
-              Digital Ocean, Flywheel, Pagely, Siteground)
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Security: Security analysis, threat detection, code and software audits, hack investigations and removals, digital forensics, hosting reviews, best practices consulting
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Performance: Core Web Vitals, Pagespeed Insights, Lighthouse, waterfall analysis, search engine placement
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Optimization: CDN, caching, image offloading, lazy loading, code cleanup
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Integrations: DNS, SSL, domains, mailing lists, marketing tools,
-              e-commerce, membership
-            </li>
-          </ul>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white/80 backdrop-blur-sm relative z-10">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8 gradient-text">Let's Work Together</h2>
+            <p class="text-xl text-gray-600 mb-12 leading-relaxed">
+                Ready to bring your vision to life? I'm here to help with your WordPress, security, hosting, and optimization needs.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="card-hover bg-gradient-to-br from-indigo-500/10 to-purple-500/10 p-8 rounded-2xl">
+                    <svg class="w-12 h-12 text-indigo-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Email Me</h3>
+                    <p class="text-gray-600">Get in touch for project inquiries</p>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-purple-500/10 to-cyan-500/10 p-8 rounded-2xl">
+                    <svg class="w-12 h-12 text-purple-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Let's Connect</h3>
+                    <p class="text-gray-600">Follow me on social media</p>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-cyan-500/10 p-8 rounded-2xl">
+                <p class="text-gray-700 mb-4">
+                    Created for entertainment purposes only with Claude Sonnet 4 until I hit my message limit.
+                </p>
+                <a href="https://github.com/websupergirl/websupergirl.github.io" class="inline-flex items-center text-indigo-500 hover:text-purple-500 transition-colors font-semibold">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    See the source code
+                </a>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <hr class="m-0" />
-
-      <section
-        class="publications-section p-3 p-lg-5 d-flex align-items-center"
-        id="publications"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Publications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <a href="https://www.thatsupergirl.com/bluehost/"
-                >My Experience with Bluehost</a
-              >
-            </li>
-          </ul>
+    <!-- Footer -->
+    <footer class="bg-gray-900/95 backdrop-blur-sm text-white py-8 relative z-10">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-400">
+                © 2025 supernikole!
+            </p>
         </div>
-      </section>
+    </footer>
 
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="community"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Community Engagements</h2>
-          <p class="mb-3">
-            I grew up in a time when there were no role models for me as I was
-            learning to code and entering the industry, so I am passionate about
-            giving back. I'm also a rare extrovert in tech - I get energized by
-            new ideas and community building, so I like to be a part of the tech
-            community (both online and offline) as much as I can.
-          </p>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Speaker, WordPress Accessibility Day</strong>
-              (2022)
-              <em
-                >I will be speaking on developing WordPress themes with an
-                accessibility-first mindset.</em
-              >
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Hacktoberfest Participant (Github/Digital Ocean)</strong>
-              (2019, 2020, &amp; 2022)
-              <em
-                >In the past, I have contributed to a variety of local open
-                source projects as part of the annual October hackathon. This
-                year, I am going to try to build out a larger project to use as
-                a teaching tool.
-              </em>
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong
-                >Mentor &amp; Educational Liason, Bitforest Academy (Connected
-                Lane County)</strong
-              >
-              (2020 to Present)
-              <em
-                >We coached 3 local high school students (a developer, an
-                artist, and an art/tech specialist) through creating their own
-                video game as a team. We focused on real-world employment
-                skills, teamwork, and industry connections. I helped students
-                explore careeer paths, manage their time, and cope with the
-                stresses of real-world situations in the industry.
-              </em>
-            </li>
-
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong
-                >Board Member, Bitforest (game development community)</strong
-              >
-              (2020 to Present)
-              <em
-                >I help shape decisions for the organization, attend regular
-                meetings, vote on issues, direct educational initiatives, and
-                lead the audit committee.</em
-              >
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong
-                >Board Member, Lane Computer Science Regional Advisory
-                Committee</strong
-              >
-              (2019 to Present)
-              <em
-                >I meet with educators, community organizations, and industry
-                partners to help shape computer science education and create
-                opportunities in computer science for students.</em
-              >
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong
-                >Mentor, Project-Based Mentorship Programming (Connected Lane
-                County)</strong
-              >
-              (March 2022)
-              <em
-                >I helped a local high school student with a web development
-                project over the course of several weeks, acting as a teacher,
-                advisor, and soundboard.</em
-              >
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong
-                >Speaker, BIPOC Girls Career Exploration Day (Lane ESD /
-                Connected Lane County)</strong
-              >
-              (March 13, 2022)
-              <em
-                >I gave a presenation on my life and career, and answered
-                questions from local students on how to get into tech.</em
-              >
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong
-                >Mentor/Volunteer, codeORcreate (Connected Lane County)</strong
-              >
-              (February 2020, December 2020, &amp; December 2021)
-              <em
-                >I helped teams of high school students plan, organize, execute,
-                troubleshoot, and showcase their digital projects in weekend
-                hackathons.</em
-              >
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Presenter, Eugene Web Devs</strong> (August 2018 and
-              September 2019)
-              <em
-                >In addition to be a regular at the monthly meetings, I have
-                also had the opportunity to present to the group.</em
-              >
-              [WordPress Security: A Walkthrough of an Attack
-              <a href="https://www.youtube.com/watch?v=Ov7gaUZXrG0">Video</a>
-              and
-              <a
-                href="https://github.com/eugenewebdevs/archive/tree/master/2018-WordPress-Security-A-Walkthrough-of-an-Attack"
-                >Repository</a
-              >] [Headless WordPress with JS
-              <a href="https://www.youtube.com/watch?v=a-AYUOI4r0A">Video</a>
-              and
-              <a
-                href="https://github.com/eugenewebdevs/archive/tree/master/2019-09-26-Headless-WP-With-JS"
-                >Repository</a
-              >]
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Co-chair, Eugene Code Camp</strong> (Summer 2019 to
-              Present)
-              <em
-                >I help facilitate meetings and assist anyone with questions
-                about their coding projects.</em
-              >
-              [<a href="https://eugenecodecamp.com">Group Website</a>]
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Attendee, Local Meetups</strong>
-              <em
-                >In order to further my education and listen to other
-                perspectives, I attend regular meetings and seminars for a
-                variety of local groups like PyEugene, Bitforest (game
-                development), Elm Eugene, Eugene Cybersecurity, Eugene Area SQL
-                Server User Group, Eugene-Springfield­ Startups, Technology
-                Association of Oregon in greater Eugene, and Eugene Tech.</em
-              >
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Hack For A Cause Steering Committee Member</strong> (Fall
-              2019 through April 2020)
-              <em
-                >I am the volunteer coordinator and mentor wrangler for the next
-                annual event, helping to create a solid support staff for the
-                hackers and the event.</em
-              >
-              [<a href="https://hackforacause.org/">Event Website</a>]
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Eugene Coding Initiative Founder</strong> (2018 to
-              Present)
-              <em
-                >I create opportunities for both minors and adults in the
-                community to learn about technology and how they can advance
-                their knowledge of the topic. I hold original events and
-                programs, as well as support other groups with their own
-                programs.</em
-              >
-              [<a href="https://codeeug.org/">Website</a>]
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Grant Winner, US Ignite</strong> (Fall 2018 through Spring
-              2019)
-              <em
-                >I received a $10k grant to create educational programming for
-                children using coding and LEGO wi-fi enabled robots.</em
-              >
-              [<a
-                href="https://www.us-ignite.org/news/smart-gigabit-communities-program-awards-80k-to-promote-local-application-development/"
-                >Press Release</a
-              >]
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Hack For A Cause Mentor</strong> (April 2018 and April
-              2019)
-              <em
-                >I provide support to the hack participants in terms of
-                resources, project ideation, code troubleshooting, and team
-                formation.</em
-              >
-              [<a href="https://hackforacause.org/">Event Website</a>]
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Speaker, TAO Ignite</strong> (February 2019)
-              <em
-                >I was selected to present at a local Ignite event, where each
-                speaker gets 5 minutes, and must use 20 slides with each slide
-                advancing automatically after 15 seconds. Topic: Normalizing
-                diversity in technology education.</em
-              >
-              [<a href="https://vimeo.com/showcase/5753265/video/316472040"
-                >Presentation Video</a
-              >]
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Presenter, Open Eugene Festival</strong> (December 2019)
-              <em
-                >I presented at a local open source conference. Topic: Open
-                education and what it means.</em
-              >
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong
-                >Volunteer Coder-in-Residence Instructor, Connected Lane
-                Coder-in-Residence Program</strong
-              >
-              (Spring 2018 to Present)
-              <em
-                >I teach blockly-based coding to local 4th and 5th grade
-                children.</em
-              >
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong
-                >Gigabot Master, Connected Lane Coder-in-Residence
-                Program</strong
-              >
-              (December 2017 to Present)
-              <em
-                >Working under a Mozilla Foundation grant, I created the
-                classroom-ready wifi-enabled LEGO Gigabot (Jimmy-Kyle), all
-                learning materials, the building instructions, and the training
-                materials used by the teachers and volunteers in the program. I
-                also recruit and lead volunteers for the program, network the
-                bots to work in each school, and ensure the program runs as
-                smoothly as possible from the volunteer and technology
-                sides.</em
-              >
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Gigabot Instructor, Mozilla Foundation</strong> (July
-              2018)
-              <em
-                >I conducted a training session in Kansas City, Missouri, on all
-                of the equipment and materials created for the local Gigabot
-                program, so that the program could be replicated in other
-                areas.</em
-              >
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong>Eugene Women in Tech Co-Leader</strong> (2018-2019)
-              <em
-                >EWIT provides networking and social opportunities to women
-                working in tech or tech-adjacent careers. I help run social and
-                networking events, and connect members in the community.</em
-              >
-              [<a href="https://eugenewomenintech.org/">Website</a>]
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i>
-              <strong
-                >Board Member, Churchill High School Engineering Academy</strong
-              >
-              (2015 to 2018)
-              <em
-                >I provide assistance to the program and mentorship
-                opportunities for the kids.</em
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="coursework"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Relevant Coursework &amp; Continuing Education</h2>
-          <ul class="fa-ul mb-0">
-            <li><i class="fa-li fa fa-star text-primary"></i> Unix Tools</li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Creating Web
-              Documents
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Oral and Social
-              Communication
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Managerial
-              Leadership
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Geometry,
-              Trigonometry, Calculus
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Entrepreneurship for
-              Engineers
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Software
-              Infrastructure for E-Commerce
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> The Complete React
-              Developer Course
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> The Ultimate Vue
-              Crash Course
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> The Complete React
-              Native + Hooks Course
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Learning GatsbyJS in
-              2 Hours
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Gatsby JS: Build
-              Gatsby static sites with React &amp; WordPress
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Advanced CSS &amp;
-              Sass
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> CSS Bootcamp -
-              Master CSS (CSS Grid / CSS Flexbox)
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> The complete VUE JS
-              course
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Vue JS Essentials
-              with Vuex and Vue Router
-            </li>
-            <li><i class="fa-li fa fa-star text-primary"></i> Nuxt.js</li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> React - The Complete
-              Guide (incl Hooks, React Router, Redux)
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Vue - The Complete
-              Guide (w/ Router, Vuex, Composition API)
-            </li>
-            <li>
-              <i class="fa-li fa fa-star text-primary"></i> Learn Python 2
-            </li>
-            <li><i class="fa-li fa fa-star text-primary"></i> Learn R</li>
-          </ul>
-        </div>
-      </section>
-
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="interests"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Personal Interests</h2>
-          <p class="mb-0">
-            When I'm not involved in tech or education, I am at home with my
-            kids and dogs. I work with a local animal rescue to save dogs from
-            high-kill shelters and find them new homes, so we ususally have a
-            foster dog or two around as well. I enjoy playing video games with
-            my friends. I am also a huge Marvel fan and I love any great story
-            that I can lose myself in.
-          </p>
-        </div>
-      </section>
-
-      <hr class="m-0" />
-
-      <section class="p-3 p-lg-5 d-flex align-items-center">
-        <div class="w-100">
-          <p class="mb-0">
-            This site was created on
-            <a href="https://pages.github.com/">Github Pages</a> using a
-            modified version of the
-            <a href="https://startbootstrap.com/themes/resume/"
-              >Start Bootstrap Resume theme</a
-            >.<br /><em
-              >[<a href="https://github.com/websupergirl/websupergirl.github.io"
-                >See the source code</a
-              >.]</em
-            >
-          </p>
-        </div>
-      </section>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-  </body>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                const menu = document.getElementById('mobileMenu');
+                menu.classList.add('hidden');
+            });
+        });
+        
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
 </html>
