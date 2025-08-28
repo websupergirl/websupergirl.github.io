@@ -2,6 +2,10 @@
 
 This is the source code for my portfolio/professional website at [supernikole.com](https://supernikole.com/)
 
+## Version 5 (Nikole's Version).
+
+I gave up on Claude getting the content right. I would have thought it was better at content than coding, but I will admit I am wrong on that front. I manually editing the Claude html file to get the content right.
+
 ## Version "Complete 4", or 24, or whatever this is at this point.
 
 I kept this broken version as an example of when Claude just sort of got lost and started smashing code on to the end of the page, after the HTML. After a few more prompts, I got it to right itself. It was interesting because it was the code that I didn't have high expectations of, going into this. But the code, for the most part, did fine - with a couple of exceptions where Claude really had to just redo this to make it right.
