@@ -2,6 +2,22 @@
 
 This is the source code for my portfolio/professional website at [supernikole.com](https://supernikole.com/)
 
+## Version "Complete 4", or 24, or whatever this is at this point.
+
+I kept this broken version as an example of when Claude just sort of got lost and started smashing code on to the end of the page, after the HTML. After a few more prompts, I got it to right itself. It was interesting because it was the code that I didn't have high expectations of, going into this. But the code, for the most part, did fine - with a couple of exceptions where Claude really had to just redo this to make it right.
+
+## Version 3
+
+It's not really version 3, as there were some points where we had to go back and undo things. I also had to wade through the "messages" credit system a bit. What I found interesting about 3 is that it took multiple tries to get Claude to absorb more of the content I had supplied it with at the first prompt. It tried with generic text, and then with summarizing things. It left entire sections out. And at some points it just ... made things up. There was stuff on the page not even found on my original resume that was supplied.
+
+
+## Version 2 or 200, who knows.
+
+I had to restate several times that I wanted the logo and the background image from the original source material to be on the new page. When I finally got it to happen by supplying the direct URLs to the images, it put 3 logos on the page. Hilarious.
+
+## Version 1 or pre-alpha or "is this thing one?"
+
+I supplied Claude with the technology contraints, the page to pull content and images from, and the changes I wanted from the old page to the new page. At that point he took a bit of creative license on the whole thing ...
 
 ## Credits
 
