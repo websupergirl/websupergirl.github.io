@@ -4,7 +4,7 @@ This is the source code for my portfolio/professional website at [supernikole.co
 
 ## Version 5 (Nikole's Version).
 
-I gave up on Claude getting the content right. I would have thought it was better at content than coding, but I will admit I am wrong on that front. I manually editing the Claude html file to get the content right.
+I gave up on Claude getting the content right. I would have thought it was better at content than coding, but I will admit I am wrong on that front. I manually edited the Claude html file to get the content right. What is interesting is that when I wanted to go back to Claude with my modified file, he was no longer doing full pages for this, and only gave me the snippet of a paw svg. I still don't like the paw icon, but it took many credits just to get this image with all the back and forth.
 
 ## Version "Complete 4", or 24, or whatever this is at this point.
 
